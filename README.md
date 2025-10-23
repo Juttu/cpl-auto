@@ -25,7 +25,7 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-### 3) Configure environment variables
+### 3) Configure environment variables (not need I GUESS)
 
 >1. This step only needed - If the values expire
 >2. These are open websites(NO LOGIN NEEDED) - General understanding is they **"DO NOT EXPIRE"** 
