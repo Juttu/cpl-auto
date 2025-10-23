@@ -6,6 +6,7 @@ import requests
 from dataclasses import dataclass
 from dotenv import load_dotenv
 
+
 # ===== Config =====
 SEARCH_PATH = "/wday/cxs/kla/Search/jobs"
 OUTPUT_PATH = "kla-auto.txt"

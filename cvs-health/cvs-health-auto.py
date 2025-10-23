@@ -6,6 +6,7 @@ import requests
 from dataclasses import dataclass
 from dotenv import load_dotenv
 
+
 # ===== Config =====
 BASE_PATH = "/widgets"
 OUTPUT_PATH = "cvs-health-auto.txt"

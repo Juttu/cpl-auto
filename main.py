@@ -4,6 +4,7 @@ import sys
 import subprocess
 from pathlib import Path
 
+
 try:
     from dotenv import load_dotenv
 except ImportError:
