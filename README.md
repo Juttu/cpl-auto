@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 ## Run
 
-**Run both scripts (no limits):**
+**Runs both scripts (no limits):**
 ```bash
 python main.py
 ```
