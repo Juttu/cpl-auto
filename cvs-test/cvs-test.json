@@ -1,0 +1,1045 @@
+{
+  "refineSearch": {
+    "status": 200,
+    "hits": 10,
+    "totalHits": 182,
+    "data": {
+      "jobs": [
+        {
+          "subCategory": "Data and Analytics",
+          "ml_skills": [
+            "communication skills",
+            "education",
+            "general office duties"
+          ],
+          "remote": "Remote",
+          "type": "Full time",
+          "descriptionTeaser": "This role will lead transforming complex healthcare and pharmacy data into actionable insights that drive program performance, improve patient outcomes, and strengthen strategic partnerships. Collabor...",
+          "state": "Illinois",
+          "siteType": "external",
+          "multi_category": [
+            "Corporate",
+            "Innovation and Technology"
+          ],
+          "reqId": "R0746519",
+          "city": "Work at Home",
+          "latitude": "41.88407",
+          "multi_location": [
+            "Work at Home, Illinois, United States"
+          ],
+          "address": "30 West Monroe Street",
+          "applyUrl": "https://cvshealth.wd1.myworkdayjobs.com/CVS_Health_Careers/job/IL---Chicago/Analyst--Population-Health_R0746519/apply",
+          "ml_job_parser": {
+            "descriptionTeaser": "This role will lead transforming complex healthcare and pharmacy data into actionable insights that drive program performance, improve patient outcomes, and strengthen strategic partnerships. Collabor...",
+            "descriptionTeaser_first200": "At CVS Health, we’re building a world of health around every consumer and surrounding ourselves with dedicated colleagues who are passionate about transforming health care. As the nation’s leading ...",
+            "descriptionTeaser_keyword": "At CVS Health, we’re building a world of health around every consumer and surrounding ourselves with dedicated colleagues who are passionate about transforming health care. As the nation’s leading hea...",
+            "descriptionTeaser_ats": "At CVS Health, we’re building a world of health around every consumer and surrounding ourselves with dedicated colleagues who are passionate about transforming health care.As the nation’s leading heal"
+          },
+          "externalApply": true,
+          "cityState": "Work at Home, Illinois",
+          "country": "United States",
+          "indeedApplyTags": true,
+          "visibilityType": "External",
+          "longitude": "-87.6333",
+          "jobId": "R0746519",
+          "locale": "en_US",
+          "title": "Analyst, Population Health",
+          "jobSeqNo": "CVSCHLUSR0746519EXTERNALENUS",
+          "postedDate": "2025-10-23T00:00:00.000+0000",
+          "dateCreated": "2025-10-22T21:25:51.976+0000",
+          "cityStateCountry": "Work at Home, Illinois, United States",
+          "jobVisibility": [
+            "external"
+          ],
+          "location": "Work at Home, Illinois, United States",
+          "category": "Innovation and Technology",
+          "isMultiLocation": true,
+          "multi_location_array": [
+            {
+              "latlong": {
+                "lon": -87.6333,
+                "lat": 41.88407
+              },
+              "location": "Work at Home, Illinois, United States"
+            }
+          ],
+          "isMultiCategory": false,
+          "multi_category_array": [
+            {
+              "category": "Corporate"
+            },
+            {
+              "category": "Innovation and Technology"
+            }
+          ],
+          "badge": ""
+        },
+        {
+          "subCategory": "Information Technology",
+          "ml_skills": [
+            "stakeholder engagement",
+            "business intelligence",
+            "stakeholder management",
+            "pmp",
+            "cross-functional teams",
+            "business analytics",
+            "healthcare analytics",
+            "reconciliation",
+            "dashboards",
+            "problem-solving abilities",
+            "data integration",
+            "data reporting",
+            "written communication skills",
+            "education",
+            "proficiency in sql",
+            "verbal communication",
+            "microsoft excel"
+          ],
+          "remote": "Hybrid",
+          "type": "Full time",
+          "descriptionTeaser": "Leads and manages a team of IT project managers, providing guidance, mentorship, and performance management to ensure successful project delivery and professional growth of team members. Provides stra...",
+          "state": "Connecticut",
+          "siteType": "external",
+          "multi_category": [
+            "Innovation and Technology"
+          ],
+          "reqId": "R0743836",
+          "city": "Hartford",
+          "latitude": "41.76316",
+          "multi_location": [
+            ",United States"
+          ],
+          "address": "151 Farmington Avenue",
+          "applyUrl": "https://cvshealth.wd1.myworkdayjobs.com/CVS_Health_Careers/job/CT---Hartford/Senior-Manager--IT-Project-Management--IC-_R0743836-1/apply",
+          "ml_job_parser": {
+            "descriptionTeaser": "Leads and manages a team of IT project managers, providing guidance, mentorship, and performance management to ensure successful project delivery and professional growth of team members. Provides stra...",
+            "descriptionTeaser_first200": "At CVS Health, we’re building a world of health around every consumer and surrounding ourselves with dedicated colleagues who are passionate about transforming health care. As the nation’s leading ...",
+            "descriptionTeaser_keyword": "At CVS Health, we’re building a world of health around every consumer and surrounding ourselves with dedicated colleagues who are passionate about transforming health care. As the nation’s leading hea...",
+            "descriptionTeaser_ats": "At CVS Health, we’re building a world of health around every consumer and surrounding ourselves with dedicated colleagues who are passionate about transforming health care.As the nation’s leading heal"
+          },
+          "externalApply": true,
+          "cityState": "Hartford, Connecticut",
+          "country": "United States",
+          "indeedApplyTags": true,
+          "visibilityType": "External",
+          "longitude": "-72.6937",
+          "jobId": "R0743836",
+          "locale": "en_US",
+          "title": "Senior Manager, IT Project Management (IC)",
+          "jobSeqNo": "CVSCHLUSR0743836EXTERNALENUS",
+          "postedDate": "2025-10-23T00:00:00.000+0000",
+          "dateCreated": "2025-10-21T14:24:33.190+0000",
+          "cityStateCountry": ",United States",
+          "jobVisibility": [
+            "external"
+          ],
+          "location": ",United States",
+          "category": "Innovation and Technology",
+          "isMultiLocation": true,
+          "multi_location_array": [
+            {
+              "latlong": {
+                "lon": -72.6937,
+                "lat": 41.76316
+              },
+              "location": ",United States"
+            }
+          ],
+          "isMultiCategory": false,
+          "multi_category_array": [
+            {
+              "category": "Innovation and Technology"
+            }
+          ],
+          "badge": ""
+        },
+        {
+          "subCategory": "Data and Analytics",
+          "ml_skills": [
+            "accuracy",
+            "monitoring",
+            "operating procedures",
+            "patient safety",
+            "education",
+            "technical knowledge",
+            "visual inspection"
+          ],
+          "remote": "Remote",
+          "type": "Full time",
+          "descriptionTeaser": "Benefit solutions that address the different needs and preferences of our colleagues including paid time off, flexible work schedules, family leave, dependent care resources, colleague assistance prog...",
+          "state": "Illinois",
+          "siteType": "external",
+          "multi_category": [
+            "Corporate",
+            "Innovation and Technology"
+          ],
+          "reqId": "R0752117",
+          "city": "Work at Home",
+          "latitude": "41.88407",
+          "multi_location": [
+            "Work at Home, Illinois, United States"
+          ],
+          "address": "30 West Monroe Street",
+          "applyUrl": "https://cvshealth.wd1.myworkdayjobs.com/CVS_Health_Careers/job/IL---Chicago/Analyst--Population-Health_R0752117/apply",
+          "ml_job_parser": {
+            "descriptionTeaser": "Benefit solutions that address the different needs and preferences of our colleagues including paid time off, flexible work schedules, family leave, dependent care resources, colleague assistance prog...",
+            "descriptionTeaser_first200": "At CVS Health, we’re building a world of health around every consumer and surrounding ourselves with dedicated colleagues who are passionate about transforming health care. As the nation’s leading ...",
+            "descriptionTeaser_keyword": "At CVS Health, we’re building a world of health around every consumer and surrounding ourselves with dedicated colleagues who are passionate about transforming health care. As the nation’s leading hea...",
+            "descriptionTeaser_ats": "At CVS Health, we’re building a world of health around every consumer and surrounding ourselves with dedicated colleagues who are passionate about transforming health care.As the nation’s leading heal"
+          },
+          "externalApply": true,
+          "cityState": "Work at Home, Illinois",
+          "country": "United States",
+          "indeedApplyTags": true,
+          "visibilityType": "External",
+          "longitude": "-87.6333",
+          "jobId": "R0752117",
+          "locale": "en_US",
+          "title": "Analyst, Population Health",
+          "jobSeqNo": "CVSCHLUSR0752117EXTERNALENUS",
+          "postedDate": "2025-10-23T00:00:00.000+0000",
+          "dateCreated": "2025-10-22T21:25:51.957+0000",
+          "cityStateCountry": "Work at Home, Illinois, United States",
+          "jobVisibility": [
+            "external"
+          ],
+          "location": "Work at Home, Illinois, United States",
+          "category": "Innovation and Technology",
+          "isMultiLocation": true,
+          "multi_location_array": [
+            {
+              "latlong": {
+                "lon": -87.6333,
+                "lat": 41.88407
+              },
+              "location": "Work at Home, Illinois, United States"
+            }
+          ],
+          "isMultiCategory": false,
+          "multi_category_array": [
+            {
+              "category": "Corporate"
+            },
+            {
+              "category": "Innovation and Technology"
+            }
+          ],
+          "badge": ""
+        },
+        {
+          "subCategory": "Data and Analytics",
+          "ml_skills": [
+            "communication skills",
+            "education",
+            "sql skills"
+          ],
+          "remote": "Remote/Hybrid",
+          "type": "Full time",
+          "descriptionTeaser": "Assist in the month-end close process, which includes preparing and loading datafiles from multiple sources, processing manual adjustments, and producing reports for key stakeholders. Work with stakeh...",
+          "state": "Connecticut",
+          "siteType": "external",
+          "multi_category": [
+            "Innovation and Technology"
+          ],
+          "reqId": "R0726687",
+          "city": "Hartford",
+          "latitude": "41.76316",
+          "multi_location": [
+            ",United States"
+          ],
+          "address": "151 Farmington Avenue",
+          "applyUrl": "https://cvshealth.wd1.myworkdayjobs.com/CVS_Health_Careers/job/CT-Hartford/Senior-Analyst--Medical-Economics_R0726687/apply",
+          "ml_job_parser": {
+            "descriptionTeaser": "Assist in the month-end close process, which includes preparing and loading datafiles from multiple sources, processing manual adjustments, and producing reports for key stakeholders. Work with stakeh...",
+            "descriptionTeaser_first200": "At CVS Health, we’re building a world of health around every consumer and surrounding ourselves with dedicated colleagues who are passionate about transforming health care. As the nation’s leading ...",
+            "descriptionTeaser_keyword": "At CVS Health, we’re building a world of health around every consumer and surrounding ourselves with dedicated colleagues who are passionate about transforming health care. As the nation’s leading hea...",
+            "descriptionTeaser_ats": "At CVS Health, we’re building a world of health around every consumer and surrounding ourselves with dedicated colleagues who are passionate about transforming health care.As the nation’s leading heal"
+          },
+          "externalApply": true,
+          "cityState": "Hartford, Connecticut",
+          "country": "United States",
+          "indeedApplyTags": true,
+          "visibilityType": "External",
+          "longitude": "-72.6937",
+          "jobId": "R0726687",
+          "locale": "en_US",
+          "title": "Senior Analyst, Medical Economics",
+          "jobSeqNo": "CVSCHLUSR0726687EXTERNALENUS",
+          "postedDate": "2025-10-23T00:00:00.000+0000",
+          "dateCreated": "2025-09-22T18:25:27.433+0000",
+          "cityStateCountry": ",United States",
+          "jobVisibility": [
+            "external"
+          ],
+          "location": ",United States",
+          "category": "Innovation and Technology",
+          "isMultiLocation": true,
+          "multi_location_array": [
+            {
+              "latlong": {
+                "lon": -72.6937,
+                "lat": 41.76316
+              },
+              "location": ",United States"
+            }
+          ],
+          "isMultiCategory": false,
+          "multi_category_array": [
+            {
+              "category": "Innovation and Technology"
+            }
+          ],
+          "badge": ""
+        },
+        {
+          "subCategory": "Information Technology",
+          "ml_skills": [
+            "software development",
+            "devops",
+            "java",
+            "agile software development",
+            "junit",
+            "jenkins",
+            "development experience",
+            "maven",
+            "cloud platform",
+            "gcp",
+            "cloud",
+            "springboot",
+            "artifactory",
+            "api's",
+            "azure",
+            "systems analysis",
+            "technical expertise",
+            "cicd pipeline",
+            "git",
+            "java frameworks",
+            "ml",
+            "cloud technologies",
+            "b2c",
+            "domain knowledge",
+            "kubernetes",
+            "pci dss",
+            "jmeter",
+            "technical lead",
+            "product strategy",
+            "education"
+          ],
+          "remote": "Hybrid",
+          "type": "Full time",
+          "descriptionTeaser": "8+ years of experience either managing large software development teams or serving as a Technical Lead / Advisor responsible for technical decision / direction. At least 5 years of experience building...",
+          "state": "Rhode Island",
+          "siteType": "external",
+          "multi_category": [
+            "Innovation and Technology"
+          ],
+          "reqId": "R0556994",
+          "city": "Woonsocket",
+          "latitude": "41.99038",
+          "multi_location": [
+            ",United States",
+            "151 Farmington Avenue, Hartford, Connecticut,United States",
+            "3600 Mansell Road, Alpharetta, Georgia,United States",
+            "2100 East Lake Cook Road, Buffalo Grove, Illinois,United States",
+            "161 Avenue of the Americas, New York, New York,United States",
+            "1300 East Campbell Road, Richardson, Texas,United States"
+          ],
+          "address": "One CVS Drive",
+          "applyUrl": "https://cvshealth.wd1.myworkdayjobs.com/CVS_Health_Careers/job/RI---Woonsocket/Principal-Software-Development-Engineer_R0556994/apply",
+          "ml_job_parser": {
+            "descriptionTeaser": "8+ years of experience either managing large software development teams or serving as a Technical Lead / Advisor responsible for technical decision / direction. At least 5 years of experience building...",
+            "descriptionTeaser_first200": "At CVS Health, we’re building a world of health around every consumer and surrounding ourselves with dedicated colleagues who are passionate about transforming health care. As the nation’s leading ...",
+            "descriptionTeaser_keyword": "At CVS Health, we’re building a world of health around every consumer and surrounding ourselves with dedicated colleagues who are passionate about transforming health care. As the nation’s leading hea...",
+            "descriptionTeaser_ats": "At CVS Health, we’re building a world of health around every consumer and surrounding ourselves with dedicated colleagues who are passionate about transforming health care.As the nation’s leading heal"
+          },
+          "externalApply": true,
+          "cityState": "Woonsocket, Rhode Island",
+          "country": "United States",
+          "indeedApplyTags": true,
+          "visibilityType": "External",
+          "longitude": "-71.52367",
+          "jobId": "R0556994",
+          "locale": "en_US",
+          "title": "Principal Software Development Engineer",
+          "jobSeqNo": "CVSCHLUSR0556994EXTERNALENUS",
+          "postedDate": "2025-10-23T00:00:00.000+0000",
+          "dateCreated": "2025-04-22T12:58:56.463+0000",
+          "cityStateCountry": ",United States",
+          "jobVisibility": [
+            "external"
+          ],
+          "location": ",United States",
+          "category": "Innovation and Technology",
+          "isMultiLocation": true,
+          "multi_location_array": [
+            {
+              "latlong": {
+                "lon": -71.52367,
+                "lat": 41.99038
+              },
+              "location": ",United States"
+            },
+            {
+              "latlong": {
+                "lon": -72.6937,
+                "lat": 41.76316
+              },
+              "location": "151 Farmington Avenue, Hartford, Connecticut,United States"
+            },
+            {
+              "latlong": {
+                "lon": -84.26992,
+                "lat": 34.02121
+              },
+              "location": "3600 Mansell Road, Alpharetta, Georgia,United States"
+            },
+            {
+              "latlong": {
+                "lon": -87.95979,
+                "lat": 42.15141
+              },
+              "location": "2100 East Lake Cook Road, Buffalo Grove, Illinois,United States"
+            },
+            {
+              "latlong": {
+                "lon": -74.00283,
+                "lat": 40.71403
+              },
+              "location": "161 Avenue of the Americas, New York, New York,United States"
+            },
+            {
+              "latlong": {
+                "lon": -96.725,
+                "lat": 32.93651
+              },
+              "location": "1300 East Campbell Road, Richardson, Texas,United States"
+            }
+          ],
+          "isMultiCategory": false,
+          "multi_category_array": [
+            {
+              "category": "Innovation and Technology"
+            }
+          ],
+          "badge": ""
+        },
+        {
+          "subCategory": "Data and Analytics",
+          "ml_skills": [
+            "planning experience",
+            "data review",
+            "education",
+            "care planning",
+            "child welfare",
+            "family therapy",
+            "case manager"
+          ],
+          "remote": "Remote",
+          "type": "Full time",
+          "descriptionTeaser": "Your experience will include translating business needs into analytic questions, and will ideally include experience in pharmacy benefits pricing, MAC list management, or related healthcare jobs. 1+ y...",
+          "state": "Illinois",
+          "siteType": "external",
+          "multi_category": [
+            "Innovation and Technology"
+          ],
+          "reqId": "R0743307",
+          "city": "Work at Home",
+          "latitude": "39.80172",
+          "multi_location": [
+            "Work at Home, Illinois, United States"
+          ],
+          "address": "Work At Home",
+          "applyUrl": "https://cvshealth.wd1.myworkdayjobs.com/CVS_Health_Careers/job/IL---Work-from-home/Sr-Mgr-Reporting-Strategy_R0743307/apply",
+          "ml_job_parser": {
+            "descriptionTeaser": "Your experience will include translating business needs into analytic questions, and will ideally include experience in pharmacy benefits pricing, MAC list management, or related healthcare jobs. 1+ y...",
+            "descriptionTeaser_first200": "At CVS Health, we’re building a world of health around every consumer and surrounding ourselves with dedicated colleagues who are passionate about transforming health care. As the nation’s leading ...",
+            "descriptionTeaser_keyword": "At CVS Health, we’re building a world of health around every consumer and surrounding ourselves with dedicated colleagues who are passionate about transforming health care. As the nation’s leading hea...",
+            "descriptionTeaser_ats": "At CVS Health, we’re building a world of health around every consumer and surrounding ourselves with dedicated colleagues who are passionate about transforming health care.As the nation’s leading heal"
+          },
+          "externalApply": true,
+          "cityState": "Work at Home, Illinois",
+          "country": "United States",
+          "indeedApplyTags": true,
+          "visibilityType": "External",
+          "longitude": "-89.64371",
+          "jobId": "R0743307",
+          "locale": "en_US",
+          "title": "Sr Mgr,Reporting Strategy",
+          "jobSeqNo": "CVSCHLUSR0743307EXTERNALENUS",
+          "postedDate": "2025-10-23T00:00:00.000+0000",
+          "dateCreated": "2025-10-22T17:26:31.843+0000",
+          "cityStateCountry": "Work at Home, Illinois, United States",
+          "jobVisibility": [
+            "external"
+          ],
+          "location": "Work at Home, Illinois, United States",
+          "category": "Innovation and Technology",
+          "isMultiLocation": true,
+          "multi_location_array": [
+            {
+              "latlong": {
+                "lon": -89.64371,
+                "lat": 39.80172
+              },
+              "location": "Work at Home, Illinois, United States"
+            }
+          ],
+          "isMultiCategory": false,
+          "multi_category_array": [
+            {
+              "category": "Innovation and Technology"
+            }
+          ],
+          "badge": ""
+        },
+        {
+          "subCategory": "Information Technology",
+          "ml_skills": [
+            "site reliability engineering",
+            "observability",
+            "automation",
+            "communication skills",
+            "decision-making",
+            "problem-solving",
+            "cloud platforms",
+            "kubernetes",
+            "pos systems",
+            "pharmacy systems",
+            "distributed systems",
+            "team leadership",
+            "change leadership",
+            "collaboration"
+          ],
+          "remote": "Remote/Hybrid",
+          "type": "Full time",
+          "descriptionTeaser": "Join our team as an Executive Director of Engineering, where you will lead the Site Reliability Engineering function at CVS Health. Drive operational excellence and modernize technology strategies to enhance customer experiences in retail and pharmacy environments.",
+          "state": "Rhode Island",
+          "siteType": "external",
+          "multi_category": [
+            "Innovation and Technology"
+          ],
+          "reqId": "R0732416",
+          "city": "Woonsocket",
+          "latitude": "41.99038",
+          "multi_location": [
+            ",United States"
+          ],
+          "address": "One CVS Drive",
+          "applyUrl": "https://cvshealth.wd1.myworkdayjobs.com/CVS_Health_Careers/job/RI---Woonsocket/Executive-Director---Engineering--SRE---Retail--Pharmacy---Dispensing_R0732416/apply",
+          "ml_job_parser": {
+            "descriptionTeaser": "Join our team as an Executive Director of Engineering, where you will lead the Site Reliability Engineering function at CVS Health. Drive operational excellence and modernize technology strategies to enhance customer experiences in retail and pharmacy environments.",
+            "descriptionTeaser_ats": "A Brief OverviewProvides strategic leadership and oversight of the Site Reliability Engineering (SRE) function supporting CVS Health’s retail and pharmacy store systems. This leader defines strategies",
+            "descriptionTeaser_keyword": "A Brief Overview. Provides strategic leadership and oversight of the Site Reliability Engineering (SRE) function supporting CVS Health’s retail and pharmacy store systems. This leader defines strategi...",
+            "descriptionTeaser_first200": "A Brief Overview. Provides strategic leadership and oversight of the Site Reliability Engineering (SRE) function supporting CVS Health’s retail and pharmacy store systems. This leader defines strat..."
+          },
+          "externalApply": true,
+          "cityState": "Woonsocket, Rhode Island",
+          "country": "United States",
+          "indeedApplyTags": true,
+          "visibilityType": "External",
+          "longitude": "-71.52367",
+          "jobId": "R0732416",
+          "locale": "en_US",
+          "title": "Executive Director - Engineering, SRE - Retail, Pharmacy & Dispensing",
+          "jobSeqNo": "CVSCHLUSR0732416EXTERNALENUS",
+          "postedDate": "2025-10-23T00:00:00.000+0000",
+          "dateCreated": "2025-10-21T14:24:33.225+0000",
+          "cityStateCountry": ",United States",
+          "jobVisibility": [
+            "external"
+          ],
+          "location": ",United States",
+          "category": "Innovation and Technology",
+          "isMultiLocation": true,
+          "multi_location_array": [
+            {
+              "latlong": {
+                "lon": -71.52367,
+                "lat": 41.99038
+              },
+              "location": ",United States"
+            }
+          ],
+          "isMultiCategory": false,
+          "multi_category_array": [
+            {
+              "category": "Innovation and Technology"
+            }
+          ],
+          "badge": ""
+        },
+        {
+          "subCategory": "Data and Analytics",
+          "remote": "Remote",
+          "type": "Full time",
+          "descriptionTeaser": "At CVS Health, we’re building a world of health around every consumer and surrounding ourselves with dedicated colleagues who are passionate about transforming health care.As the nation’s leading heal",
+          "state": "Rhode Island",
+          "siteType": "external",
+          "multi_category": [
+            "Innovation and Technology"
+          ],
+          "reqId": "R0739766",
+          "city": "Work at Home",
+          "latitude": "41.99038",
+          "multi_location": [
+            "Work at Home, Rhode Island, United States"
+          ],
+          "address": "One CVS Drive",
+          "applyUrl": "https://cvshealth.wd1.myworkdayjobs.com/CVS_Health_Careers/job/RI---Woonsocket/XMLNAME---Cloud-Security-Engineer---GCP---AWS_R0739766-1/apply",
+          "externalApply": true,
+          "cityState": "Work at Home, Rhode Island",
+          "country": "United States",
+          "indeedApplyTags": true,
+          "visibilityType": "External",
+          "longitude": "-71.52367",
+          "jobId": "R0739766",
+          "locale": "en_US",
+          "title": "Cloud Security Engineer – GCP & AWS",
+          "jobSeqNo": "CVSCHLUSR0739766EXTERNALENUS",
+          "postedDate": "2025-10-23T00:00:00.000+0000",
+          "dateCreated": "2025-10-06T12:23:01.395+0000",
+          "cityStateCountry": "Work at Home, Rhode Island, United States",
+          "jobVisibility": [
+            "external"
+          ],
+          "location": "Work at Home, Rhode Island, United States",
+          "category": "Innovation and Technology",
+          "isMultiLocation": true,
+          "multi_location_array": [
+            {
+              "latlong": {
+                "lon": -71.52367,
+                "lat": 41.99038
+              },
+              "location": "Work at Home, Rhode Island, United States"
+            }
+          ],
+          "isMultiCategory": false,
+          "multi_category_array": [
+            {
+              "category": "Innovation and Technology"
+            }
+          ],
+          "badge": ""
+        },
+        {
+          "subCategory": "Digital Engineering & Architecture",
+          "remote": "Hybrid",
+          "type": "Full time",
+          "descriptionTeaser": "Join our team as a Senior Software Development Engineer and leverage your expertise in healthcare systems to drive innovative software solutions. If you have a passion for mentoring and leading development teams, we want to hear from you!",
+          "state": "Arizona",
+          "siteType": "external",
+          "multi_category": [
+            "Innovation and Technology"
+          ],
+          "reqId": "R0704208",
+          "city": "Scottsdale",
+          "latitude": "33.50921",
+          "multi_location": [
+            "9501 East Shea Boulevard, Scottsdale, Arizona,United States"
+          ],
+          "address": "9501 East Shea Boulevard",
+          "applyUrl": "https://cvshealth.wd1.myworkdayjobs.com/CVS_Health_Careers/job/AZ---Scottsdale/Senior-NET-Developer_R0704208/apply",
+          "externalApply": true,
+          "cityState": "Scottsdale, Arizona",
+          "country": "United States",
+          "indeedApplyTags": true,
+          "visibilityType": "External",
+          "longitude": "-111.89903",
+          "jobId": "R0704208",
+          "locale": "en_US",
+          "title": "Senior Software Development Engineer",
+          "jobSeqNo": "CVSCHLUSR0704208EXTERNALENUS",
+          "postedDate": "2025-10-22T00:00:00.000+0000",
+          "dateCreated": "2025-09-12T15:24:16.454+0000",
+          "cityStateCountry": "9501 East Shea Boulevard, Scottsdale, Arizona,United States",
+          "jobVisibility": [
+            "external"
+          ],
+          "location": "9501 East Shea Boulevard, Scottsdale, Arizona,United States",
+          "category": "Innovation and Technology",
+          "ml_skills": [
+            "c#",
+            ".net core",
+            "asp.net",
+            "vb.net",
+            "mvc",
+            "angular",
+            "sql",
+            "entity framework",
+            "sql server",
+            "microsoft ssis",
+            "scrum",
+            "mentoring",
+            "problem-solving",
+            "communication skills",
+            "agility",
+            "project management"
+          ],
+          "ml_job_parser": {
+            "descriptionTeaser": "Join our team as a Senior Software Development Engineer and leverage your expertise in healthcare systems to drive innovative software solutions. If you have a passion for mentoring and leading development teams, we want to hear from you!",
+            "descriptionTeaser_first200": "At CVS Health, we’re building a world of health around every consumer and surrounding ourselves with dedicated colleagues who are passionate about transforming health care. As the nation’s leading ...",
+            "descriptionTeaser_keyword": "At CVS Health, we’re building a world of health around every consumer and surrounding ourselves with dedicated colleagues who are passionate about transforming health care. As the nation’s leading hea...",
+            "descriptionTeaser_ats": "At CVS Health, we’re building a world of health around every consumer and surrounding ourselves with dedicated colleagues who are passionate about transforming health care.As the nation’s leading heal"
+          },
+          "isMultiLocation": true,
+          "multi_location_array": [
+            {
+              "latlong": {
+                "lon": -111.8882,
+                "lat": 33.60421
+              },
+              "location": "9501 East Shea Boulevard, Scottsdale, Arizona,United States"
+            }
+          ],
+          "isMultiCategory": false,
+          "multi_category_array": [
+            {
+              "category": "Innovation and Technology"
+            }
+          ],
+          "badge": ""
+        },
+        {
+          "subCategory": "Digital Engineering & Architecture",
+          "ml_skills": [
+            "java",
+            "advanced java",
+            "spring",
+            "spring boot",
+            "rest apis",
+            "oop",
+            "design patterns",
+            "cloud platforms",
+            "gcp",
+            "azure",
+            "aws",
+            "ci/cd",
+            "jenkins",
+            "github actions",
+            "agile",
+            "stakeholder communication",
+            "team collaboration",
+            "python",
+            "node.js",
+            "tdd"
+          ],
+          "remote": "Hybrid",
+          "type": "Full time",
+          "descriptionTeaser": "Join our team as a Senior Software Development Engineer and help us transform healthcare through innovative digital solutions. If you have a passion for coding and a desire to make a difference, we want to hear from you!",
+          "state": "Texas",
+          "siteType": "external",
+          "multi_category": [
+            "Innovation and Technology"
+          ],
+          "reqId": "R0661666",
+          "city": "Richardson",
+          "latitude": "32.94818",
+          "multi_location": [
+            "1300 East Campbell Road, Richardson, Texas,United States",
+            "2100 East Lake Cook Road, Buffalo Grove, Illinois,United States",
+            "One CVS Drive, Woonsocket, Rhode Island,United States"
+          ],
+          "address": "1300 East Campbell Road",
+          "applyUrl": "https://cvshealth.wd1.myworkdayjobs.com/CVS_Health_Careers/job/TX---Richardson/Senior-Software-Development-Engineer_R0661666-1/apply",
+          "ml_job_parser": {
+            "descriptionTeaser": "Join our team as a Senior Software Development Engineer and help us transform healthcare through innovative digital solutions. If you have a passion for coding and a desire to make a difference, we want to hear from you!",
+            "descriptionTeaser_first200": "At CVS Health, we’re building a world of health around every consumer and surrounding ourselves with dedicated colleagues who are passionate about transforming health care. As the nation’s leading ...",
+            "descriptionTeaser_keyword": "At CVS Health, we’re building a world of health around every consumer and surrounding ourselves with dedicated colleagues who are passionate about transforming health care. As the nation’s leading hea...",
+            "descriptionTeaser_ats": "At CVS Health, we’re building a world of health around every consumer and surrounding ourselves with dedicated colleagues who are passionate about transforming health care.As the nation’s leading heal"
+          },
+          "externalApply": true,
+          "cityState": "Richardson, Texas",
+          "country": "United States",
+          "indeedApplyTags": true,
+          "visibilityType": "External",
+          "longitude": "-96.72972",
+          "jobId": "R0661666",
+          "locale": "en_US",
+          "title": "Senior Software Development Engineer",
+          "jobSeqNo": "CVSCHLUSR0661666EXTERNALENUS",
+          "postedDate": "2025-10-22T00:00:00.000+0000",
+          "dateCreated": "2025-08-01T18:27:53.529+0000",
+          "cityStateCountry": "1300 East Campbell Road, Richardson, Texas,United States",
+          "jobVisibility": [
+            "external"
+          ],
+          "location": "1300 East Campbell Road, Richardson, Texas,United States",
+          "category": "Innovation and Technology",
+          "isMultiLocation": true,
+          "multi_location_array": [
+            {
+              "latlong": {
+                "lon": -96.725,
+                "lat": 32.93651
+              },
+              "location": "1300 East Campbell Road, Richardson, Texas,United States"
+            },
+            {
+              "latlong": {
+                "lon": -87.95979,
+                "lat": 42.15141
+              },
+              "location": "2100 East Lake Cook Road, Buffalo Grove, Illinois,United States"
+            },
+            {
+              "latlong": {
+                "lon": -71.52367,
+                "lat": 41.99038
+              },
+              "location": "One CVS Drive, Woonsocket, Rhode Island,United States"
+            }
+          ],
+          "isMultiCategory": false,
+          "multi_category_array": [
+            {
+              "category": "Innovation and Technology"
+            }
+          ],
+          "badge": ""
+        }
+      ],
+      "aggregations": [
+        {
+          "field": "country",
+          "value": {
+            "Canada": 1,
+            "Ireland": 1,
+            "Spain": 1,
+            "United States": 182
+          }
+        },
+        {
+          "field": "subCategory",
+          "value": {
+            "Data and Analytics": 62,
+            "Digital Engineering & Architecture": 84,
+            "Digital Product, Design & Operations": 13,
+            "Enterprise Information Security ": 17,
+            "Information Technology": 36,
+            "Intern": 297,
+            "Leadership Development Programs": 4
+          }
+        },
+        {
+          "field": "businessUnit",
+          "value": {
+            "Aetna": 10,
+            "Caremark": 12,
+            "Corporate Offices": 150,
+            "Oak Street Health": 10
+          }
+        },
+        {
+          "field": "city",
+          "value": {
+            "Albany": 11,
+            "Alpharetta": 5,
+            "Annapolis": 4,
+            "Atlanta": 7,
+            "Augusta": 4,
+            "Austin": 15,
+            "Baton Rouge": 5,
+            "Bismarck": 4,
+            "Bloomington": 3,
+            "Blue Bell": 7,
+            "Boise": 4,
+            "Boston": 16,
+            "Buffalo Grove": 18,
+            "Carson City": 4,
+            "Charleston": 3,
+            "Cheyenne": 4,
+            "Chicago": 3,
+            "Columbia": 4,
+            "Columbus": 4,
+            "Concord": 4,
+            "Cumberland": 3,
+            "Dallas": 2,
+            "Denver": 6,
+            "Des Moines": 4,
+            "Dover": 3,
+            "Farmers Branch": 1,
+            "Florham Park": 1,
+            "Frankfort": 4,
+            "Franklin": 2,
+            "Harrisburg": 9,
+            "Hartford": 37,
+            "Helena": 4,
+            "Honolulu": 2,
+            "Indianapolis": 4,
+            "Irving": 8,
+            "Jackson": 4,
+            "Jefferson City": 5,
+            "Juneau": 3,
+            "Laguna Woods": 1,
+            "Lansing": 4,
+            "Lincoln": 4,
+            "Little Rock": 5,
+            "Madison": 4,
+            "Monroeville": 1,
+            "Montgomery": 5,
+            "Montpelier": 4,
+            "Moon Township": 1,
+            "Nashville": 4,
+            "New York": 11,
+            "Northbrook": 6,
+            "Oklahoma City": 4,
+            "Olympia": 4,
+            "Parsippany": 1,
+            "Phoenix": 8,
+            "Pierre": 4,
+            "Pittsburgh": 2,
+            "Providence": 7,
+            "Raleigh": 6,
+            "Richardson": 17,
+            "Richmond": 5,
+            "Sacramento": 5,
+            "Saint Paul": 4,
+            "Salem": 4,
+            "Salt Lake City": 4,
+            "San Juan": 2,
+            "Santa Fe": 4,
+            "Scottsdale": 12,
+            "Springfield": 13,
+            "Tallahassee": 9,
+            "Tampa": 1,
+            "Topeka": 4,
+            "Trenton": 7,
+            "Twinsburg": 1,
+            "Washington": 2,
+            "Washington Dc": 3,
+            "Wellesley": 8,
+            "Woonsocket": 31,
+            "Work At Home": 35,
+            "Work at Home": 77
+          }
+        },
+        {
+          "field": "state",
+          "value": {
+            "Alabama": 22,
+            "Alaska": 10,
+            "Arizona": 45,
+            "Arkansas": 23,
+            "California": 26,
+            "Colorado": 26,
+            "Connecticut": 74,
+            "Delaware": 24,
+            "District of Columbia": 22,
+            "Dublin": 1,
+            "Florida": 34,
+            "Georgia": 36,
+            "Hawaii": 11,
+            "Idaho": 21,
+            "Illinois": 79,
+            "Indiana": 23,
+            "Iowa": 22,
+            "Kansas": 21,
+            "Kentucky": 22,
+            "Louisiana": 23,
+            "Maine": 23,
+            "Maryland": 24,
+            "Massachusetts": 56,
+            "Michigan": 24,
+            "Minnesota": 29,
+            "Mississippi": 23,
+            "Missouri": 22,
+            "Montana": 22,
+            "Nebraska": 22,
+            "Nevada": 23,
+            "New Hampshire": 24,
+            "New Jersey": 33,
+            "New Mexico": 21,
+            "New York": 53,
+            "North Carolina": 29,
+            "North Dakota": 22,
+            "Ohio": 25,
+            "Oklahoma": 23,
+            "Ontario": 1,
+            "Oregon": 22,
+            "Pennsylvania": 46,
+            "Puerto Rico": 7,
+            "Rhode Island": 71,
+            "Sevilla": 1,
+            "South Carolina": 23,
+            "South Dakota": 22,
+            "Tennessee": 27,
+            "Texas": 80,
+            "Utah": 21,
+            "Vermont": 23,
+            "Virginia": 27,
+            "Washington": 22,
+            "West Virginia": 21,
+            "Wisconsin": 22,
+            "Wyoming": 21
+          }
+        },
+        {
+          "field": "phLocSlider",
+          "value": {}
+        },
+        {
+          "field": "remote",
+          "value": {
+            "Field": 6,
+            "Hybrid": 42,
+            "On-Site": 1,
+            "Remote": 77,
+            "Remote/Hybrid": 56
+          }
+        },
+        {
+          "field": "type",
+          "value": {
+            "Full time": 182
+          }
+        },
+        {
+          "field": "category",
+          "value": {
+            "Innovation and Technology": 182,
+            "Students": 0
+          }
+        }
+      ],
+      "SEARCH_CONFIG": {
+        "contextualSearch": false,
+        "isSuggestionsEnabled": true
+      },
+      "suggestions": {},
+      "ui_skills_selection": null,
+      "ui_selections": {
+        "country": [
+          "United States"
+        ],
+        "subCategory": [
+          "Information Technology",
+          "Data and Analytics",
+          "Digital Engineering & Architecture"
+        ],
+        "category": [
+          "Innovation and Technology",
+          "Students"
+        ],
+        "type": [
+          "Full time"
+        ]
+      },
+      "locationData": {
+        "sliderRadius": 50,
+        "aboveMaxRadius": true,
+        "LocationUnit": "miles"
+      }
+    },
+    "eid": {
+      "trialIndex": -1,
+      "eid": "68fb010857c5c85e11ae3581",
+      "searchType": "location",
+      "isMultiLingualVectorApplied": false,
+      "query": "United States",
+      "variant": 0,
+      "banditId": "",
+      "keywordLanguage": "en"
+    }
+  }
+}
