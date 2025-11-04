@@ -19,9 +19,91 @@ What it does
 import html
 import json
 import requests
+import asyncio
 
 # ======== CONFIG (edit this only) ========
-COOKIE= r'''VISITED_LANG=en; VISITED_COUNTRY=us; in_ref=https%3A%2F%2Fwww.google.com%2F; _ga=GA1.1.1320764963.1761270501; SNS=1; PHPPPE_GCC=d; _gcl_au=1.1.706138294.1761270502; _sn_m={"r":{"n":1,"r":"google"},"gi":{"lt":"42.29040","lg":"-71.07120","latitude":"42.29040","longitude":"-71.07120","country":"United States","countryCode":"US","regionCode":"MA","regionName":"Massachusetts"}}; _RCRTX03=860907bab07b11f0bb750b69f81ed5afd04ae830011449068d56914ff82bd272; _RCRTX03-samesite=860907bab07b11f0bb750b69f81ed5afd04ae830011449068d56914ff82bd272; _tt_enable_cookie=1; _ttp=01K89YE507V5PPCGT5KEJSBHB2_.tt.1; OptanonAlertBoxClosed=2025-10-24T01:48:25.640Z; PLAY_SESSION=eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjp7IkpTRVNTSU9OSUQiOiJlOTUwNjU3OC05NDliLTQ5NTctYjJmNy0zNjc3ZDAyZjkxMWEiLCJjc3JmVG9rZW4iOiI4YjU2MmE4NzIwYmE0YTkxYWY0MDA0ZWMxODQ2ZjYwMSJ9LCJuYmYiOjE3NjEyODc1NzksImlhdCI6MTc2MTI4NzU3OX0.5o9yyKbzYI73Z_snjw5CGYnIGqG5bY1whLkk7zVuC2U; PHPPPE_ACT=e9506578-949b-4957-b2f7-3677d02f911a; ext_trk=pjid%3De9506578-949b-4957-b2f7-3677d02f911a&p_in_ref%3Dhttps://www.google.com/&p_lang%3Den_us&refNum%3DCVSCHLUS; _sn_n={"cs":{"b06b":{"i":[1792806506236,1],"c":1}},"ssc":1,"a":{"i":"e78eb88a-972c-418b-b71e-0e7b8eb3019d"}}; _ga_K585E9E3MR=GS2.1.s1761287579$o3$g1$t1761292873$j59$l0$h0; _sn_a={"a":{"s":1761287199490,"l":"https://cvshealth.com/us/en/search-results","e":1761291846878},"v":"dc22fa24-f319-4c97-ae43-a552aa9e79bb","g":{"sc":{"b06bf6c0-a2ac-44b3-ace6-50de59dd886f":1}}}; OptanonConsent=isGpcEnabled=0&datestamp=Fri+Oct+24+2025+04%3A01%3A14+GMT-0400+(Eastern+Daylight+Time)&version=202411.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&landingPath=NotLandingPage&groups=C0001%3A1%2CC0011%3A1&geolocation=US%3BNY&AwaitingReconsent=false; ttcsid=1761287454186::YABn2bKhrOcK1IevvaUK.3.1761292945384.0; ttcsid_C355C0FG09FC36CGKOGG=1761287454186::rXEDZZxacz92OhQGA7iK.3.1761292945385.0'''
+import subprocess
+import shlex
+import sys
+from pathlib import Path
+
+# ====== Replace your static COOKIE assignment with a dynamic call ======
+
+
+def get_cookie_from_node(node_script_path="get_cvs_cookie.js", node_bin="node", timeout=30):
+    """
+    Run the Node script, stream stdout/stderr live to Python stdout,
+    and return the cookie header string printed by the script.
+    Raises RuntimeError on failure.
+    """
+    script = Path(node_script_path)
+    if not script.exists():
+        raise RuntimeError(f"Node script not found: {script.resolve()}")
+
+    cmd = [node_bin, str(script)]
+    try:
+        proc = subprocess.Popen(
+            cmd,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True,
+            bufsize=1,
+        )
+    except FileNotFoundError as e:
+        raise RuntimeError(
+            f"Node binary not found ('{node_bin}'). Install Node.js or adjust node_bin.") from e
+    except Exception as e:
+        raise RuntimeError(f"Failed to start node process: {e}") from e
+
+    lines = []
+    try:
+        # Stream output live, line by line
+        for raw in proc.stdout:
+            line = raw.rstrip("\n")
+            if "FOUND" in line or "CLICKED" in line: 
+                print(line)           # live log output
+            lines.append(line)
+        # Wait for process to exit (with timeout)
+        try:
+            proc.wait(timeout=timeout)
+        except subprocess.TimeoutExpired:
+            proc.kill()
+            raise RuntimeError(f"Node script timed out after {timeout}s")
+    finally:
+        # ensure pipes are closed
+        if proc.stdout:
+            proc.stdout.close()
+
+    if proc.returncode != 0:
+        # include last few lines to help debug
+        tail = "\n".join(lines[-20:])
+        raise RuntimeError(
+            f"Node script failed (exit {proc.returncode}). Last output:\n{tail}")
+
+    # Extract the last non-empty line that looks like a cookie (contains '=')
+    cookie_candidate = None
+    for ln in reversed([ln for ln in lines if ln.strip()]):
+        if "=" in ln:
+            cookie_candidate = ln
+            break
+
+    if not cookie_candidate:
+        tail = "\n".join(lines[-40:])
+        raise RuntimeError(
+            f"No cookie-like output found from node script. Last output:\n{tail}")
+
+    return cookie_candidate
+
+
+try:
+    COOKIE = get_cookie_from_node("get_cvs_cookie.js")
+    # truncated preview for logs
+    print(f"Using COOKIE from node script: {COOKIE[:100]}...")
+except Exception as e:
+    print("Failed to obtain cookie from Node script:", e, file=sys.stderr)
+    # fall back to hard-coded COOKIE or re-raise to fail fast:
+    # raise
+    COOKIE = ""  # or set to a sensible default / previously saved cookie
 # ========================================
 
 BASE = "https://jobs.cvshealth.com/us/en/search-results?s=1&from="
@@ -40,6 +122,7 @@ DEFAULT_HEADERS = {
     # We'll set Referer dynamically per request to the previous page
     # and inject the Cookie header below.
 }
+
 
 def _best(obj, *keys, default=None):
     """Pick the first present/non-empty key from obj."""
@@ -60,9 +143,11 @@ def _best(obj, *keys, default=None):
                 return obj[k]
     return default
 
+
 def _stringify_location(job):
     # Try simple string fields first
-    loc = _best(job, "primaryLocation", "location", "formattedLocation", "jobLocation")
+    loc = _best(job, "primaryLocation", "location",
+                "formattedLocation", "jobLocation")
     if isinstance(loc, str) and loc.strip():
         return loc.strip()
 
@@ -87,13 +172,16 @@ def _stringify_location(job):
 
     return ""
 
+
 def _stringify_posted_date(job):
     # Common fields seen across Phenom career sites
     return (
-        _best(job, "postedDate", "postedDateStr", "displayPostedDate", "postedOn")
+        _best(job, "postedDate", "postedDateStr",
+              "displayPostedDate", "postedOn")
         or _best(job, ["metadata", "postedDate"])
         or ""
     )
+
 
 def _stringify_link(job):
     # Prefer a concrete apply/deeplink/detail URL
@@ -103,6 +191,7 @@ def _stringify_link(job):
               "canonicalExternalUrl", "externalUrl")
         or ""
     )
+
 
 def extract_json_block(doc: str, key: str) -> str:
     """
@@ -146,6 +235,7 @@ def extract_json_block(doc: str, key: str) -> str:
                     return doc[start:j+1]
     raise ValueError(f'Unbalanced braces while extracting "{key}"')
 
+
 def fetch_jobs_page(session: requests.Session, from_offset: int, last_referer: str | None):
     url = f"{BASE}{from_offset}"
     headers = DEFAULT_HEADERS.copy()
@@ -161,7 +251,9 @@ def fetch_jobs_page(session: requests.Session, from_offset: int, last_referer: s
     jobs = data.get("data", {}).get("jobs", []) or []
     return url, jobs
 
+
 def main():
+
     sess = requests.Session()
     all_jobs = []
     referer = "https://jobs.cvshealth.com/us/en/search-results?from=0&s=1"
@@ -195,6 +287,7 @@ def main():
         json.dump(normalized, f, ensure_ascii=False, indent=2)
 
     print(f"Wrote {len(normalized)} jobs → {OUT_FILE}")
+
 
 if __name__ == "__main__":
     # Only acceptable invocation: python cvs_jobs_extract.py

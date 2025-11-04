@@ -1,0 +1,99 @@
+"title": "Chemical Technician"
+"externalPath": "/job/Totowa-NJ/Chemical-Technician_2532285"
+"locationsText": "Totowa, NJ"
+"postedOn": "Posted Today"
+###########################################################################################
+"title": "Sr. IT Business Process Analyst - SAP FICO"
+"externalPath": "/job/Milpitas-CA/IT-Business-Process-Analyst---SAP-FICO_2531190"
+"locationsText": "Milpitas, CA"
+"postedOn": "Posted Today"
+###########################################################################################
+"title": "Customer Support Engineer (m/f/d) - Reutlingen"
+"externalPath": "/job/DEU-Baden-Wurttemberg-Stuttgart-Remote-KLA/Customer-Support-Engineer--m-f-d----Reutlingen_2531443"
+"locationsText": "DEU-Baden-Wurttemberg-Stuttgart-Remote-KLA"
+"postedOn": "Posted Today"
+###########################################################################################
+"title": "Manufacturing Design Engineer - Shift Support"
+"externalPath": "/job/Newport-United-Kingdom/Manufacturing-Design-Engineer---Shift-Support_2531740"
+"locationsText": "Newport, United Kingdom"
+"postedOn": "Posted Today"
+###########################################################################################
+"title": "Electrical Equipment Design Engineer"
+"externalPath": "/job/Newport-United-Kingdom/RF--Plasma-and-Electronics-Engineer_2424924"
+"locationsText": "Newport, United Kingdom"
+"postedOn": "Posted Today"
+###########################################################################################
+"title": "Customer Support Engineer - FaST Products"
+"externalPath": "/job/Phoenix-AZ/Customer-Support-Engineer---FaST-Products_2532238"
+"locationsText": "Phoenix, AZ"
+"postedOn": "Posted 2 Days Ago"
+###########################################################################################
+"title": "Senior Strategic NPI Sourcing Lead"
+"externalPath": "/job/Newport-United-Kingdom/Senior-Strategic-NPI-Sourcing-Lead_2531808"
+"locationsText": "Newport, United Kingdom"
+"postedOn": "Posted 2 Days Ago"
+###########################################################################################
+"title": "Sr. Platform Architect-GenAI"
+"externalPath": "/job/Ann-Arbor-MI/Platform-Architect-GenAI_2531491-1"
+"locationsText": "Ann Arbor, MI"
+"postedOn": "Posted 3 Days Ago"
+###########################################################################################
+"title": "Senior Backend Software Engineer (C++)"
+"externalPath": "/job/Ann-Arbor-MI/Senior-Software-Engineer---AI-Data-Pipelines---Real-Time-Big-Data-Systems_2530834-1"
+"locationsText": "Ann Arbor, MI"
+"postedOn": "Posted 3 Days Ago"
+###########################################################################################
+"title": "Mechanical / Packaging Engineer"
+"externalPath": "/job/Newport-United-Kingdom/Mechanical---Packaging-Engineer_2532264"
+"locationsText": "Newport, United Kingdom"
+"postedOn": "Posted 3 Days Ago"
+###########################################################################################
+"title": "C# Softwareentwickler (w/m/d)"
+"externalPath": "/job/Jena-Germany/C--Softwareentwickler--w-m-d-_2530262"
+"locationsText": "Jena, Germany"
+"postedOn": "Posted 4 Days Ago"
+###########################################################################################
+"title": "Field Apps Engineer - PVD, Etch"
+"externalPath": "/job/Montbonnot-France/Field-Apps-Engineer---PVD--Etch_2532353"
+"locationsText": "Montbonnot, France"
+"postedOn": "Posted 6 Days Ago"
+###########################################################################################
+"title": "Product Install Engineer  - SWIFT - Extensive Travel Up To  90%"
+"externalPath": "/job/Chandler-AZ/Product-Install-Engineer----SWIFT---Extensive-Travel-Up-To--90-_2532312"
+"locationsText": "Chandler, AZ"
+"postedOn": "Posted 7 Days Ago"
+###########################################################################################
+"title": "Director - Identity and Access Management (IAM)"
+"externalPath": "/job/Milpitas-CA/Director---Identity-and-Access-Management--IDAM-_2531912"
+"locationsText": "2 Locations"
+"postedOn": "Posted 7 Days Ago"
+###########################################################################################
+"title": "Manufacturing Technician"
+"externalPath": "/job/USA-CA-Baldwin-Park-ROMA/Manufacturing-Technician_2530007"
+"locationsText": "USA-CA-Baldwin Park-ROMA"
+"postedOn": "Posted 7 Days Ago"
+###########################################################################################
+"title": "Apps, Development Engineer 2"
+"externalPath": "/job/Yokohama-Japan/Apps--Development-Engineer-2_2529319"
+"locationsText": "Yokohama, Japan"
+"postedOn": "Posted 7 Days Ago"
+###########################################################################################
+"title": "FPGA Design Engineer"
+"externalPath": "/job/Milpitas-CA/FPGA-Design-Engineer_2528011"
+"locationsText": "Milpitas, CA"
+"postedOn": "Posted 8 Days Ago"
+###########################################################################################
+"title": "Customer Service Engineer"
+"externalPath": "/job/Leuven-Belgium/Customer-Service-Engineer_2532224"
+"locationsText": "Leuven, Belgium"
+"postedOn": "Posted 8 Days Ago"
+###########################################################################################
+"title": "Product Install Engineer (f/m/d)"
+"externalPath": "/job/Dresden-Germany/Product-Install-Engineer--f-m-d-_2532205"
+"locationsText": "3 Locations"
+"postedOn": "Posted 8 Days Ago"
+###########################################################################################
+"title": "Product Install Engineer - RAPID - Extensive  (90%) Travel Required"
+"externalPath": "/job/Phoenix-AZ/Product-Install-Engineer---RAPID---Extensive-90----Travel-Required_2530452"
+"locationsText": "Phoenix, AZ"
+"postedOn": "Posted 9 Days Ago"
