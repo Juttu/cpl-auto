@@ -1,98 +1,72 @@
 const puppeteer = require("puppeteer");
 
-
-const MANUAL_SN_A = `_sn_a={"a":{"s":1762252024992,"l":"https://cvshealth.com/us/en/search-results?s=1","e":1762251120297},"v":"dc22fa24-f319-4c97-ae43-a552aa9e79bb","g":{"sc":{"b06bf6c0-a2ac-44b3-ace6-50de59dd886f":1}}}`;
-// --- Helper function to replace _sn_a ---
-async function replaceSnACookie(page, newValue) {
-  const cookies = await page.cookies();
-  const updatedCookies = cookies.map((c) => {
-    if (c.name === "_sn_a") {
-      return { ...c, value: newValue };
-    }
-    return c;
-  });
-
-  // Add _sn_a if missing
-  if (!cookies.some((c) => c.name === "_sn_a")) {
-    updatedCookies.push({
-      name: "_sn_a",
-      value: newValue,
-      domain: ".cvshealth.com",
-      path: "/",
-      httpOnly: false,
-      secure: true,
-    });
-  }
-
-  await page.setCookie(...updatedCookies);
-}
-
+const CHROME_PATH = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
+// Base dir (NOT including the profile folder)
+const USER_DATA_BASE = "/Users/juttugajendraanurag/Library/Application Support/Google/Chrome";
+// The folder name exactly as it appears in Finder/Terminal
+const PROFILE_NAME = "Profile 14";
 
 // Sleep utility
 const sleep = (ms) => new Promise((res) => setTimeout(res, ms));
 
 (async () => {
   try {
-    const browser = await puppeteer.launch({ headless: true });
+    const browser = await puppeteer.launch({
+      headless: false,
+      userDataDir: `${process.env.HOME}/.puppeteer-cvs-profile`,
+      defaultViewport: null,
+      args: [
+        "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+      ],
+    });
     const page = await browser.newPage();
+
+    await page.setExtraHTTPHeaders({
+      "Accept-Language": "en-GB,en-US;q=0.9,en;q=0.8,ml;q=0.7",
+    });
+
+    // reduce cache weirdness but keep SW/profile state
+    await page.setCacheEnabled(false);
 
     await page.goto("https://jobs.cvshealth.com/us/en/search-results?s=1", {
       waitUntil: "networkidle2",
     });
 
-    
-
-
     // Select "Most recent"
     await setSortFilter(page);
-    await sleep(1000);
+    await sleep(3000);
     // await waitForServerUpdate(page);
-
-
 
     // Click the filter button (opens filter panel)
     await clickFacetCheckbox(page, "Innovation and Technology");
-    await sleep(1000); // wait for panel to open
+    await sleep(3000); // wait for panel to open
     // await waitForServerUpdate(page);
 
-
-
-
     await clickFacetCheckbox(page, "Students");
-    await sleep(1000);
+    await sleep(3000);
     // await waitForServerUpdate(page);
 
     await clickFacetCheckbox(page, "Data and Analytics");
-    await sleep(1000);
+    await sleep(3000);
     // await waitForServerUpdate(page);
-
-
 
     await clickFacetCheckbox(page, "Digital Engineering & Architecture");
-    await sleep(1000);
+    await sleep(3000);
     // await waitForServerUpdate(page);
-
-
-    await sleep(1000); // wait for panel to open
 
     await clickFacetCheckbox(page, "Information Technology");
-    await sleep(1000);
+    await sleep(3000);
     // await waitForServerUpdate(page);
-
-
 
     await clickFacetCheckbox(page, "United States");
-    await sleep(1000);
+    await sleep(3000);
     // await waitForServerUpdate(page);
-
-
 
     await clickFacetCheckbox(page, "Full time");
-    await sleep(1000); // wait for panel to open
+    await sleep(3000); // wait for panel to open
     // await waitForServerUpdate(page);
 
-
-    await sleep(1500); // 1.5 seconds
+    await sleep(5500); // 3.5 seconds
 
     // await replaceSnACookie(page, MANUAL_SN_A);
 
@@ -101,7 +75,7 @@ const sleep = (ms) => new Promise((res) => setTimeout(res, ms));
     const cookieHeader = cookies.map((c) => `${c.name}=${c.value}`).join("; ");
     console.log(cookieHeader);
 
-    await browser.close();
+    // await browser.close();
   } catch (err) {
     console.error("Error:", err.message);
     process.exit(1);
