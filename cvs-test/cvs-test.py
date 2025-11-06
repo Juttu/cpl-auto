@@ -26,6 +26,7 @@ import subprocess
 import shlex
 import sys
 from pathlib import Path
+import re
 
 # ====== Replace your static COOKIE assignment with a dynamic call ======
 
@@ -94,11 +95,34 @@ def get_cookie_from_node(node_script_path="get_cvs_cookie.js", node_bin="node", 
 
     return cookie_candidate
 
+def extract_cookie_value(cookie_header: str, name: str) -> str | None:
+    """Extract cookie value by name from a 'Cookie:' header string."""
+    m = re.search(rf'(?:^|;\s*){re.escape(name)}\s*=\s*([^;]+)', cookie_header)
+    if not m:
+        return None
+    val = m.group(1).strip()
+    # strip quotes or trailing semicolons if any
+    if (val.startswith('"') and val.endswith('"')) or (val.startswith("'") and val.endswith("'")):
+        val = val[1:-1]
+    return val.rstrip(';')
+
+def replace_cookie_value(cookie_header: str, name: str, new_value: str) -> str:
+    """Replace/add a single cookie name=value inside a cookie header string."""
+    pattern = re.compile(rf'(^|;\s*){re.escape(name)}\s*=\s*[^;]+')
+    replacement = rf'\1{name}={new_value}'
+    if pattern.search(cookie_header):
+        return pattern.sub(replacement, cookie_header, count=1)
+    # not present → append
+    sep = "" if cookie_header.endswith(";") else ";"
+    return f"{cookie_header}{sep} {name}={new_value}"
 
 try:
-    COOKIE = get_cookie_from_node("get_cvs_cookie.js")
+    COOKIE = '''VISITED_LANG=en; VISITED_COUNTRY=us; _ga=GA1.1.1320764963.1761270501; PHPPPE_GCC=d; _gcl_au=1.1.706138294.1761270502; _RCRTX03=860907bab07b11f0bb750b69f81ed5afd04ae830011449068d56914ff82bd272; _RCRTX03-samesite=860907bab07b11f0bb750b69f81ed5afd04ae830011449068d56914ff82bd272; _tt_enable_cookie=1; _ttp=01K89YE507V5PPCGT5KEJSBHB2_.tt.1; OptanonAlertBoxClosed=2025-10-24T01:48:25.640Z; in_ref=https%3A%2F%2Fwww.google.com%2F; SNS=1; _sn_m={"r":{"n":0,"r":"google"},"gi":{"lt":"42.29040","lg":"-71.07120","latitude":"42.29040","longitude":"-71.07120","country":"United States","countryCode":"US","regionCode":"MA","regionName":"Massachusetts"}}; rx_jobid_b252f2ea-d743-11e6-bd44-e18ad9435508=R0563320; ttcsid=1762240913131::ZVfdVBWV71uv_2n2H203.5.1762240913358.0; ttcsid_C355C0FG09FC36CGKOGG=1762240913130::7rxpsifjAY5wmNhQKpYY.5.1762240913358.0; _sn_n={"cs":{"b06b":{"i":[1793752808855,2],"c":1,"h":1}},"ssc":1,"a":{"i":"dc2fc0bd-f4b7-4436-b2e7-fe06e86d9346"}}; PLAY_SESSION=eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjp7IkpTRVNTSU9OSUQiOiJkMjlhZTZkZi03MWM1LTQwNGQtYTdiNC01OTY0Nzg3YTZkYTIiLCJjc3JmVG9rZW4iOiI0YTgyY2U2MjUwMGU0OTNjODllMDliN2E2ODBiMjhjNSJ9LCJuYmYiOjE3NjIzOTkwMTksImlhdCI6MTc2MjM5OTAxOX0.s0m8KMfZtVsx4x6ugYukJw7MexEeqnaUTyLH-vU3qM8; OptanonConsent=isGpcEnabled=0&datestamp=Tue+Nov+04+2025+06%3A07%3A51+GMT-0500+(Eastern+Standard+Time)&version=202411.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&landingPath=NotLandingPage&groups=C0001%3A1%2CC0011%3A1%2CC0004%3A1%2CC0003%3A1&geolocation=US%3BNY&AwaitingReconsent=false; _ga_K585E9E3MR=GS2.1.s1762252034$o10$g1$t1762254471$j58$l0$h0; _sn_a={"a":{"s":1762252024992,"l":"https://cvshealth.com/us/en/search-results?from=10&s=1","e":1762251120297},"v":"dc22fa24-f319-4c97-ae43-a552aa9e79bb","g":{"sc":{"b06bf6c0-a2ac-44b3-ace6-50de59dd886f":1}}}'''
+    node_cookie = get_cookie_from_node()
+    fresh_play = extract_cookie_value(node_cookie, "PLAY_SESSION")
+    COOKIE = replace_cookie_value(COOKIE, "PLAY_SESSION", fresh_play)
     # truncated preview for logs
-    print(f"Using COOKIE from node script: {COOKIE[:100]}...")
+    print(f"Using COOKIE from node script: {COOKIE}...")
 except Exception as e:
     print("Failed to obtain cookie from Node script:", e, file=sys.stderr)
     # fall back to hard-coded COOKIE or re-raise to fail fast:

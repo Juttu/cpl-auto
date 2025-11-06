@@ -1,5 +1,33 @@
 const puppeteer = require("puppeteer");
 
+
+const MANUAL_SN_A = `_sn_a={"a":{"s":1762252024992,"l":"https://cvshealth.com/us/en/search-results?s=1","e":1762251120297},"v":"dc22fa24-f319-4c97-ae43-a552aa9e79bb","g":{"sc":{"b06bf6c0-a2ac-44b3-ace6-50de59dd886f":1}}}`;
+// --- Helper function to replace _sn_a ---
+async function replaceSnACookie(page, newValue) {
+  const cookies = await page.cookies();
+  const updatedCookies = cookies.map((c) => {
+    if (c.name === "_sn_a") {
+      return { ...c, value: newValue };
+    }
+    return c;
+  });
+
+  // Add _sn_a if missing
+  if (!cookies.some((c) => c.name === "_sn_a")) {
+    updatedCookies.push({
+      name: "_sn_a",
+      value: newValue,
+      domain: ".cvshealth.com",
+      path: "/",
+      httpOnly: false,
+      secure: true,
+    });
+  }
+
+  await page.setCookie(...updatedCookies);
+}
+
+
 // Sleep utility
 const sleep = (ms) => new Promise((res) => setTimeout(res, ms));
 
@@ -12,44 +40,61 @@ const sleep = (ms) => new Promise((res) => setTimeout(res, ms));
       waitUntil: "networkidle2",
     });
 
+    
+
+
     // Select "Most recent"
     await setSortFilter(page);
     await sleep(1000);
-    await waitForServerUpdate(page);
+    // await waitForServerUpdate(page);
+
 
 
     // Click the filter button (opens filter panel)
     await clickFacetCheckbox(page, "Innovation and Technology");
     await sleep(1000); // wait for panel to open
-    await waitForServerUpdate(page);
+    // await waitForServerUpdate(page);
+
+
 
 
     await clickFacetCheckbox(page, "Students");
     await sleep(1000);
-    await waitForServerUpdate(page);
+    // await waitForServerUpdate(page);
 
     await clickFacetCheckbox(page, "Data and Analytics");
     await sleep(1000);
-    await waitForServerUpdate(page);
+    // await waitForServerUpdate(page);
+
+
 
     await clickFacetCheckbox(page, "Digital Engineering & Architecture");
     await sleep(1000);
-    await waitForServerUpdate(page);
+    // await waitForServerUpdate(page);
+
+
     await sleep(1000); // wait for panel to open
 
     await clickFacetCheckbox(page, "Information Technology");
     await sleep(1000);
-    await waitForServerUpdate(page);
+    // await waitForServerUpdate(page);
+
+
 
     await clickFacetCheckbox(page, "United States");
     await sleep(1000);
-    await waitForServerUpdate(page);
+    // await waitForServerUpdate(page);
+
+
 
     await clickFacetCheckbox(page, "Full time");
     await sleep(1000); // wait for panel to open
-    await waitForServerUpdate(page);
+    // await waitForServerUpdate(page);
+
 
     await sleep(1500); // 1.5 seconds
+
+    // await replaceSnACookie(page, MANUAL_SN_A);
 
     // Grab cookies as a single string
     const cookies = await page.cookies();
